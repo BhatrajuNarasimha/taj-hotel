@@ -1,4 +1,4 @@
-from ._anvil_designer import doubleTemplate
+from ._anvil_designer import seconTemplate
 from anvil import *
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
@@ -7,7 +7,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class double(doubleTemplate):
+class secon(seconTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -16,3 +16,6 @@ class double(doubleTemplate):
 
   def link_1_click(self, **event_args):
     open_form('menu')
+
+  def button_1_click(self, **event_args):
+    open_form('booking')

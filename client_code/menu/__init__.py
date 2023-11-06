@@ -17,14 +17,15 @@ class menu(menuTemplate):
   def button_1_click(self, **event_args):
     open_form('single')
 
-  def button_2_click(self, **event_args):
-    open_form('double')
 
   def button_3_click(self, **event_args):
     open_form('suite')
 
   def button_4_click(self, **event_args):
-    """This method is called when the button is clicked"""
     open_form('Form1')
+
+  def button_2_click(self, **event_args):
+    open_form('secon')
+
     
   

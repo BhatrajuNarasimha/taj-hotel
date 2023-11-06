@@ -16,3 +16,6 @@ class suite(suiteTemplate):
 
   def link_1_click(self, **event_args):
     open_form('menu')
+
+  def button_1_click(self, **event_args):
+    open_form('booking')
