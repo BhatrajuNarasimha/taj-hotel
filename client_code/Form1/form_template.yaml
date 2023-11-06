@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - name: button_1
-    properties: {text: button_1}
+    properties: {text: IMAGES, icon: 'fa:image'}
     type: Button
     layout_properties: {grid_position: 'XSGBWC,VYYSYS'}
     event_bindings: {click: button_1_click}
@@ -18,12 +18,12 @@ components:
     type: Image
     layout_properties: {grid_position: 'ZVZCQL,HCNTJW'}
   - name: button_2
-    properties: {text: button_2}
+    properties: {text: SIGNUP, icon: 'fa:address-book-o'}
     type: Button
     layout_properties: {grid_position: 'YAWESN,DGAQWO'}
     event_bindings: {click: button_2_click}
   - name: button_3
-    properties: {text: button_3}
+    properties: {text: LOGIN, icon: 'fa:address-card-o'}
     type: Button
     layout_properties: {grid_position: 'IXRBIC,VQDRLZ'}
     event_bindings: {click: button_3_click}
@@ -32,9 +32,9 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
 - name: label_1
-  properties: {text: "                                                           \
-      \                \ud835\udd4e\ud835\udd3c\ud835\udd43\u2102\ud835\udd46\ud835\
-      \udd44\ud835\udd3c \ud835\udd4b\ud835\udd46 \ud835\udd4b\ud835\udd38\ud835\udd41\
-      \ \u210d\ud835\udd46\ud835\udd4b\ud835\udd3c\ud835\udd43", align: center}
+  properties: {text: "                                                \ud835\udd4e\
+      \ud835\udd3c\ud835\udd43\u2102\ud835\udd46\ud835\udd44\ud835\udd3c \ud835\udd4b\
+      \ud835\udd46 \ud835\udd4b\ud835\udd38\ud835\udd41 \u210d\ud835\udd46\ud835\udd4b\
+      \ud835\udd3c\ud835\udd43", align: center, font_size: 35}
   type: Label
   layout_properties: {slot: title}
