@@ -8,11 +8,6 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
-  - name: button_1
-    properties: {text: IMAGES, icon: 'fa:image', bold: true, font_size: 20}
-    type: Button
-    layout_properties: {grid_position: 'XSGBWC,VYYSYS'}
-    event_bindings: {click: button_1_click}
   - name: image_1
     properties: {source: _/theme/profile.jfif, height: 294}
     type: Image
