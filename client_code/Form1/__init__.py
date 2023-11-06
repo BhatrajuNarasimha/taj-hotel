@@ -33,12 +33,10 @@ class Form1(Form1Template):
     time.sleep(1)
 
   def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
     anvil.users.signup_with_form()
     
 
   def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
     anvil.users.login_with_form()
     open_form('menu')
     
