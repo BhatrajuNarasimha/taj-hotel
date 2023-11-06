@@ -16,6 +16,7 @@ components:
       underline: false, icon: ''}
     name: button_4
     layout_properties: {}
+    event_bindings: {click: button_4_click}
   - type: Spacer
     properties: {height: 36}
     name: spacer_1
