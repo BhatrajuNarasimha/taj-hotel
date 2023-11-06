@@ -9,6 +9,13 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
   components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Log out, font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_4
+    layout_properties: {}
   - type: Spacer
     properties: {height: 36}
     name: spacer_1
