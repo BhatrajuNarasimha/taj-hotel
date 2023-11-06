@@ -9,21 +9,21 @@ components:
   layout_properties: {slot: default}
   components:
   - name: button_1
-    properties: {text: IMAGES, icon: 'fa:image'}
+    properties: {text: IMAGES, icon: 'fa:image', bold: true, font_size: 20}
     type: Button
     layout_properties: {grid_position: 'XSGBWC,VYYSYS'}
     event_bindings: {click: button_1_click}
   - name: image_1
-    properties: {source: _/theme/profile.jfif}
+    properties: {source: _/theme/profile.jfif, height: 294}
     type: Image
     layout_properties: {grid_position: 'ZVZCQL,HCNTJW'}
   - name: button_2
-    properties: {text: SIGNUP, icon: 'fa:address-book-o'}
+    properties: {text: SIGNUP, icon: 'fa:address-book-o', bold: true, font_size: 20}
     type: Button
     layout_properties: {grid_position: 'YAWESN,DGAQWO'}
     event_bindings: {click: button_2_click}
   - name: button_3
-    properties: {text: LOGIN, icon: 'fa:address-card-o'}
+    properties: {text: LOGIN, icon: 'fa:address-card-o', bold: true, font: '', font_size: 20}
     type: Button
     layout_properties: {grid_position: 'IXRBIC,VQDRLZ'}
     event_bindings: {click: button_3_click}
