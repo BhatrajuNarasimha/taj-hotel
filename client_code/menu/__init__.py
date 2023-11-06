@@ -22,5 +22,9 @@ class menu(menuTemplate):
 
   def button_3_click(self, **event_args):
     open_form('suite')
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1')
     
   
