@@ -61,7 +61,7 @@ components:
       border: ''
       enabled: true
       foreground: ''
-      items: []
+      items: ['102', '103', '202', '203', '302', '303']
       visible: true
       font_size: null
       font: ''
@@ -71,11 +71,10 @@ components:
       background: ''
       bold: false
       underline: false
-      include_placeholder: true
+      include_placeholder: false
     name: drop_down_1
     layout_properties: {grid_position: 'JCZWQD,JYYVBH'}
-    data_bindings:
-    - {property: items, code: 'self.item[''sroom'']', writeback: false}
+    data_bindings: []
     event_bindings: {change: drop_down_1_change}
   - type: Spacer
     properties: {height: 28.727272033691406}
@@ -97,7 +96,7 @@ components:
       border: ''
       enabled: true
       foreground: ''
-      items: []
+      items: ['1', '2', '']
       visible: true
       font_size: null
       font: ''
@@ -107,9 +106,10 @@ components:
       background: ''
       bold: false
       underline: false
-      include_placeholder: true
+      include_placeholder: false
     name: drop_down_2
     layout_properties: {grid_position: 'HUTDKD,UHAOZW'}
+    data_bindings: []
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Book, font_size: 20, font: '', spacing_above: small,
