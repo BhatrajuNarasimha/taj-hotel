@@ -41,6 +41,8 @@ components:
         format: ''}
       name: date_picker_1
       layout_properties: {}
+      data_bindings:
+      - {property: date, code: 'self.item[''date'']', writeback: true}
   - type: Spacer
     properties: {height: 21}
     name: spacer_2
@@ -53,30 +55,11 @@ components:
     name: label_3
     layout_properties: {grid_position: 'BCUHTS,HQKPKL'}
   - type: DropDown
-    properties:
-      role: null
-      align: full
-      tooltip: ''
-      placeholder: 'Check Availability:'
-      border: ''
-      enabled: true
-      foreground: ''
-      items: ['102', '103', '202', '203', '302', '303']
-      visible: true
-      font_size: null
-      font: ''
-      spacing_above: small
-      spacing_below: small
-      italic: false
-      background: ''
-      bold: false
-      underline: false
-      include_placeholder: false
+    properties: {}
     name: drop_down_1
-    layout_properties: {grid_position: 'JCZWQD,JYYVBH'}
+    layout_properties: {grid_position: 'UZWIXR,AHOWSR'}
     data_bindings:
-    - {property: items, code: 'self.item['''']', writeback: false}
-    event_bindings: {change: drop_down_1_change}
+    - {property: selected_value, code: 'self.item[''sroom'']', writeback: true}
   - type: Spacer
     properties: {height: 28.727272033691406}
     name: spacer_3
@@ -93,11 +76,11 @@ components:
       role: null
       align: full
       tooltip: ''
-      placeholder: 'Number of guests allowed:'
+      placeholder: ''
       border: ''
       enabled: true
       foreground: ''
-      items: ['1', '2', '']
+      items: [Audult-1, Audult-2, 'Audult-2, child-1', '']
       visible: true
       font_size: null
       font: ''
@@ -109,8 +92,9 @@ components:
       underline: false
       include_placeholder: false
     name: drop_down_2
-    layout_properties: {grid_position: 'HUTDKD,UHAOZW'}
-    data_bindings: []
+    layout_properties: {grid_position: 'PEMTTG,AVDKXJ'}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''sg'']', writeback: true}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Book, font_size: 20, font: '', spacing_above: small,
@@ -119,6 +103,8 @@ components:
     name: button_1
     layout_properties: {grid_position: 'VEBENW,HUGDBY'}
     event_bindings: {click: button_1_click}
+  data_bindings:
+  - {property: tag, code: 'self.item[''sg'']'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
