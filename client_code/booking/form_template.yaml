@@ -7,7 +7,83 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: label_1
+    properties: {text: name}
+    type: Label
+    layout_properties: {grid_position: 'ECHBDO,BUPXVR'}
+  - name: text_box_1
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'ECHBDO,UMITHY'}
+  - name: label_2
+    properties: {text: date}
+    type: Label
+    layout_properties: {grid_position: 'VOIJUF,UWKEQD'}
+  - name: date_picker_1
+    properties: {}
+    type: DatePicker
+    layout_properties: {grid_position: 'VOIJUF,XHGWNN'}
+  - name: label_3
+    properties: {text: 'no'}
+    type: Label
+    layout_properties: {grid_position: 'IKEZTB,XMPQTJ'}
+  - name: text_box_3
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'IKEZTB,FKRCMV'}
+  - name: label_4
+    properties: {text: email}
+    type: Label
+    layout_properties: {grid_position: 'LKZGFD,RRXJDK'}
+  - name: text_box_4
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'LKZGFD,HEGGKV'}
+  - name: label_5
+    properties: {text: arriving date}
+    type: Label
+    layout_properties: {grid_position: 'LIVJLH,TXWFKG'}
+  - name: date_picker_2
+    properties: {}
+    type: DatePicker
+    layout_properties: {grid_position: 'LIVJLH,YQILHN'}
+  - name: button_1
+    properties: {text: BOOK NOW}
+    type: Button
+    layout_properties: {grid_position: 'AYLJBP,RELLDL'}
+  - name: repeating_panel_2
+    properties: {item_template: booking.ItemTemplate2}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'JULRYT,ABXEOQ RCIWQO,WAJMQA'}
+  - name: repeating_panel_1
+    properties: {item_template: booking.ItemTemplate1}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'JULRYT,ABXEOQ RCIWQO,WAJMQA'}
+  - name: label_6
+    properties: {align: right, text: price}
+    type: Label
+    layout_properties: {grid_position: 'XTYAWB,GGAHIL'}
+  - name: text_box_7
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'XTYAWB,BENSFR'}
+  - name: label_7
+    properties: {align: right, text: tax}
+    type: Label
+    layout_properties: {grid_position: 'VARLCN,RNEABJ'}
+  - name: text_box_6
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'VARLCN,XPTHMI'}
+  - name: label_8
+    properties: {align: right, text: total}
+    type: Label
+    layout_properties: {grid_position: 'UHUAVD,SYKVKN'}
+  - name: text_box_8
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'UHUAVD,NLASFQ'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
