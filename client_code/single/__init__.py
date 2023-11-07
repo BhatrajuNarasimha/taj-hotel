@@ -24,6 +24,12 @@ class single(singleTemplate):
 
   def button_1_click(self, **event_args):
     open_form('booking')
+    anvil.server.call(
+      'add_info2', 
+      self.drop_down_1.selected_value,
+      self.drop_down_2.selected_value
+    )
+    
 
   def drop_down_2_change(self, **event_args):
     """This method is called when an item is selected"""

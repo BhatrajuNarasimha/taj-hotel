@@ -7,7 +7,14 @@ from anvil.tables import app_tables
 import anvil.server
 
 @anvil.server.callable
-def add_info(name,no,email,days):
+def add_info(name,type,no,email,days):
+    app_tables.customer.add_row(
+      name=name, 
+      no=no,
+      email=email,
+      days=days,
+    )
+def add_info2():
     app_tables.customer.add_row(
       name=name, 
       no=no,
