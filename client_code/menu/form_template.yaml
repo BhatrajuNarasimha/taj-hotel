@@ -104,13 +104,20 @@ components:
       spacing_below: small, background: '', horizontal_align: center}
     name: image_2
     layout_properties: {grid_position: 'OKKCVS,KOSHYR'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: For 1 night price = 1500, font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {grid_position: 'EVQLRP,DGPYQD'}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: View Room, font_size: 20, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: button_1
-    layout_properties: {grid_position: 'FKHFSC,GYEZPW'}
+    layout_properties: {grid_position: 'FKHFSC,QNQPWL'}
     event_bindings: {click: button_1_click}
   - type: Spacer
     properties: {height: 66}
@@ -144,6 +151,13 @@ components:
       spacing_below: small, background: '', horizontal_align: center}
     name: image_3
     layout_properties: {grid_position: 'DILAUR,MNCLQZ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: For 1 night = 3000, font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_11
+    layout_properties: {grid_position: 'TIQNGB,NFILJZ'}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: View room, font_size: 20, font: '', spacing_above: small,
@@ -184,6 +198,13 @@ components:
       spacing_below: small, background: '', horizontal_align: center}
     name: image_4
     layout_properties: {grid_position: 'YGSUNH,XFXVAX'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: For 1 night = 7000, font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_12
+    layout_properties: {grid_position: 'VVGASV,DVNPIG'}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: view suite, font_size: 20, font: '', spacing_above: small,

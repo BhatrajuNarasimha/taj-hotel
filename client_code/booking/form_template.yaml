@@ -30,6 +30,8 @@ components:
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'ECHBDO,UMITHY'}
+    data_bindings:
+    - {property: text, code: 'self.item[''name'']', writeback: true}
   - name: label_3
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Customer Phone Number:', font_size: 15, font: '', spacing_above: small,
@@ -41,6 +43,8 @@ components:
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'IKEZTB,FKRCMV'}
+    data_bindings:
+    - {property: text, code: 'self.item[''no'']', writeback: true}
   - name: label_4
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Customer Email:', font_size: 15, font: '', spacing_above: small,
@@ -52,6 +56,53 @@ components:
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'LKZGFD,HEGGKV'}
+    data_bindings:
+    - {property: text, code: 'self.item[''email'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Room type:', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {grid_position: 'MIBVQN,ZQMICM'}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [single, double, suite]
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_1
+    layout_properties: {grid_position: 'MIBVQN,QKDWAB'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'No of days:', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_5
+    layout_properties: {grid_position: 'CXBOKG,NGAOLN'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {grid_position: 'CXBOKG,YKTGGI'}
+    data_bindings:
+    - {property: text, code: 'self.item[''days'']', writeback: true}
   - type: Spacer
     properties: {height: 30}
     name: spacer_2
@@ -60,6 +111,7 @@ components:
     properties: {text: BOOK NOW}
     type: Button
     layout_properties: {grid_position: 'AYLJBP,RELLDL'}
+    event_bindings: {click: button_1_click}
   - type: Spacer
     properties: {height: 23}
     name: spacer_3

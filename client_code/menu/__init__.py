@@ -1,5 +1,6 @@
 from ._anvil_designer import menuTemplate
 from anvil import *
+import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
@@ -16,6 +17,8 @@ class menu(menuTemplate):
 
   def button_1_click(self, **event_args):
     open_form('single')
+    x= 1500;
+    
 
 
   def button_3_click(self, **event_args):

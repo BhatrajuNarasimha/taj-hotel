@@ -37,11 +37,14 @@ db_schema:
     - name: date
       admin_ui: {width: 200, order: 1}
       type: datetime
-    - name: 'no'
-      admin_ui: {width: 200, order: 2}
-      type: number
     - name: email
       admin_ui: {width: 200, order: 3}
+      type: string
+    - name: 'no'
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: days
+      admin_ui: {width: 200, order: 6}
       type: string
     title: customer
   rooms:

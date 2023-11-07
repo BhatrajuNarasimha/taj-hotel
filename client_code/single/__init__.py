@@ -1,5 +1,6 @@
 from ._anvil_designer import singleTemplate
 from anvil import *
+import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
@@ -23,4 +24,8 @@ class single(singleTemplate):
 
   def button_1_click(self, **event_args):
     open_form('booking')
+
+  def drop_down_2_change(self, **event_args):
+    """This method is called when an item is selected"""
+    pass
 

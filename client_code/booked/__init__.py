@@ -1,5 +1,6 @@
 from ._anvil_designer import bookedTemplate
 from anvil import *
+import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
@@ -13,3 +14,6 @@ class booked(bookedTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def link_1_click(self, **event_args):
+    open_form('menu')

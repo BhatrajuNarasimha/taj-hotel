@@ -11,7 +11,8 @@ unique_ids:
     booking.ItemTemplate1: '1699357484073626074784493.0896'
     booked.ItemTemplate3: '1699367997653271559924717.3308'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1699375189162667205503928.7225'
   assets:
     profile.jfif: '1699270243702918576331693.6754'
     standard-page.html: P7W4YEGVQYT3PJMVAXWAHR4GXU52XJ7J

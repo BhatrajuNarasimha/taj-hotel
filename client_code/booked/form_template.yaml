@@ -30,7 +30,7 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: label_3
-    layout_properties: {grid_position: 'EWDUFQ,YGNILF'}
+    layout_properties: {grid_position: 'EWDUFQ,JBYRJC'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -42,3 +42,4 @@ components:
     italic: false, background: '', bold: false, underline: false, icon: ''}
   name: link_1
   layout_properties: {slot: title}
+  event_bindings: {click: link_1_click}
