@@ -44,6 +44,8 @@ components:
         format: ''}
       name: date_picker_1
       layout_properties: {}
+      data_bindings:
+      - {property: date, code: 'self.item[''date'']', writeback: true}
   - type: Spacer
     properties: {height: 21}
     name: spacer_2
@@ -56,29 +58,11 @@ components:
     name: label_3
     layout_properties: {grid_position: 'BCUHTS,HQKPKL'}
   - type: DropDown
-    properties:
-      role: null
-      align: full
-      tooltip: ''
-      placeholder: 'Check Availability:'
-      border: ''
-      enabled: true
-      foreground: ''
-      items: []
-      visible: true
-      font_size: null
-      font: ''
-      spacing_above: small
-      spacing_below: small
-      italic: false
-      background: ''
-      bold: false
-      underline: false
-      include_placeholder: true
+    properties: {}
     name: drop_down_1
-    layout_properties: {grid_position: 'JCZWQD,JYYVBH'}
+    layout_properties: {grid_position: 'XXDWSX,ZCTWUG'}
     data_bindings:
-    - {property: items, code: 'self.item[''suite'']', writeback: false}
+    - {property: selected_value, code: 'self.item[''suite'']', writeback: true}
   - type: Spacer
     properties: {height: 28.727272033691406}
     name: spacer_3
@@ -99,7 +83,7 @@ components:
       border: ''
       enabled: true
       foreground: ''
-      items: []
+      items: [Family- 5, group-6, group-7, couples-4]
       visible: true
       font_size: null
       font: ''
@@ -112,6 +96,8 @@ components:
       include_placeholder: true
     name: drop_down_2
     layout_properties: {grid_position: 'HUTDKD,UHAOZW'}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''sug'']', writeback: true}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Book, font_size: 20, font: '', spacing_above: small,
