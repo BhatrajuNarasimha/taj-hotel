@@ -7,13 +7,10 @@ from anvil.tables import app_tables
 import anvil.server
 
 @anvil.server.callable
-def add_info(name, date, no,email,days):
-  current_user = anvil.users.get_user()
-  if current_user is not None:
+def add_info(name,no,email,days):
     app_tables.customer.add_row(
       name=name, 
       no=no,
       email=email,
       days=days,
-      user=current_user
     )

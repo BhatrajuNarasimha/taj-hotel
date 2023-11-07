@@ -1,8 +1,57 @@
 allow_embedding: false
 package_name: taj_hotel
 db_schema:
+  customer:
+    client: full
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: date
+      admin_ui: {order: 7, width: 200}
+      type: datetime
+    - name: 'no'
+      admin_ui: {order: 5.5, width: 200}
+      type: string
+    - name: email
+      admin_ui: {order: 5, width: 200}
+      type: string
+    - name: days
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: r-no
+      admin_ui: {width: 200, order: 8}
+      type: string
+    - name: guest
+      admin_ui: {width: 200, order: 9}
+      type: string
+    title: customer
+  rooms:
+    client: full
+    server: full
+    columns:
+    - name: sroom
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: sg
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: droom
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: dg
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: suite
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: sug
+      admin_ui: {width: 200, order: 5}
+      type: string
+    title: rooms
   users:
-    client: none
+    client: full
     server: full
     columns:
     - name: email
@@ -27,49 +76,6 @@ db_schema:
       admin_ui: {order: 6, width: 200}
       type: datetime
     title: Users
-  customer:
-    client: none
-    server: full
-    columns:
-    - name: name
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: date
-      admin_ui: {width: 200, order: 1}
-      type: datetime
-    - name: email
-      admin_ui: {width: 200, order: 3}
-      type: string
-    - name: 'no'
-      admin_ui: {width: 200, order: 5}
-      type: string
-    - name: days
-      admin_ui: {width: 200, order: 6}
-      type: string
-    title: customer
-  rooms:
-    client: search
-    server: full
-    columns:
-    - name: sroom
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: sg
-      admin_ui: {width: 200, order: 1}
-      type: string
-    - name: droom
-      admin_ui: {width: 200, order: 2}
-      type: string
-    - name: dg
-      admin_ui: {width: 200, order: 3}
-      type: string
-    - name: suite
-      admin_ui: {width: 200, order: 4}
-      type: string
-    - name: sug
-      admin_ui: {width: 200, order: 5}
-      type: string
-    title: rooms
 name: taj hotel
 startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
