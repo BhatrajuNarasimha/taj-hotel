@@ -4,28 +4,37 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"BUPXVR":30,"UMITHY":30,"GGAHIL":30,"BENSFR":30}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Book Your Room, font_size: 25, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'MZBURH,DZQNUV'}
+  - type: Spacer
+    properties: {height: 65}
+    name: spacer_1
+    layout_properties: {grid_position: 'BGGJTE,OUDEBK'}
   - name: label_1
-    properties: {text: name}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Customer Name:', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'ECHBDO,BUPXVR'}
   - name: text_box_1
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'ECHBDO,UMITHY'}
-  - name: label_2
-    properties: {text: date}
-    type: Label
-    layout_properties: {grid_position: 'VOIJUF,UWKEQD'}
-  - name: date_picker_1
-    properties: {}
-    type: DatePicker
-    layout_properties: {grid_position: 'VOIJUF,XHGWNN'}
   - name: label_3
-    properties: {text: 'no'}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Customer Phone Number:', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'IKEZTB,XMPQTJ'}
   - name: text_box_3
@@ -33,35 +42,33 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'IKEZTB,FKRCMV'}
   - name: label_4
-    properties: {text: email}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Customer Email:', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'LKZGFD,RRXJDK'}
   - name: text_box_4
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'LKZGFD,HEGGKV'}
-  - name: label_5
-    properties: {text: arriving date}
-    type: Label
-    layout_properties: {grid_position: 'LIVJLH,TXWFKG'}
-  - name: date_picker_2
-    properties: {}
-    type: DatePicker
-    layout_properties: {grid_position: 'LIVJLH,YQILHN'}
+  - type: Spacer
+    properties: {height: 30}
+    name: spacer_2
+    layout_properties: {grid_position: 'OSLKWW,SKVCFK'}
   - name: button_1
     properties: {text: BOOK NOW}
     type: Button
     layout_properties: {grid_position: 'AYLJBP,RELLDL'}
-  - name: repeating_panel_2
-    properties: {item_template: booking.ItemTemplate2}
-    type: RepeatingPanel
-    layout_properties: {grid_position: 'JULRYT,ABXEOQ RCIWQO,WAJMQA'}
-  - name: repeating_panel_1
-    properties: {item_template: booking.ItemTemplate1}
-    type: RepeatingPanel
-    layout_properties: {grid_position: 'JULRYT,ABXEOQ RCIWQO,WAJMQA'}
+  - type: Spacer
+    properties: {height: 23}
+    name: spacer_3
+    layout_properties: {grid_position: 'PFMQWW,DITOTV'}
   - name: label_6
-    properties: {align: right, text: price}
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'price: ', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'XTYAWB,GGAHIL'}
   - name: text_box_7
@@ -69,7 +76,10 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'XTYAWB,BENSFR'}
   - name: label_7
-    properties: {align: right, text: tax}
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'tax: ', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'VARLCN,RNEABJ'}
   - name: text_box_6
@@ -77,13 +87,23 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'VARLCN,XPTHMI'}
   - name: label_8
-    properties: {align: right, text: total}
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'total: ', font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'UHUAVD,SYKVKN'}
   - name: text_box_8
     properties: {}
     type: TextBox
     layout_properties: {grid_position: 'UHUAVD,NLASFQ'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Pay, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_2
+    layout_properties: {grid_position: 'NHURJT,XTQUIO'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
