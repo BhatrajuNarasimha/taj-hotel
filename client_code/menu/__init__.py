@@ -29,5 +29,11 @@ class menu(menuTemplate):
   def link_1_click(self, **event_args):
     open_form('Form1')
 
+  def link_3_click(self, **event_args):
+    open_form('booking')
+
+  def link_2_click(self, **event_args):
+    open_form('details')
+
     
   

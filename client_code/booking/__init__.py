@@ -12,9 +12,6 @@ class booking(bookingTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     
-    
-    
-
   def link_1_click(self, **event_args):
     open_form('menu')
 
@@ -84,4 +81,10 @@ class booking(bookingTemplate):
     elif self.drop_down_1.selected_value == 'suite':
       self.drop_down_rno.items = [str(rooms['suite']) for rooms in app_tables.rooms.search()]
       self.drop_down_gus.items = [str(rooms['surg']) for rooms in app_tables.rooms.search()]
+
+  def link_2_click(self, **event_args):
+    open_form('details')
+
+  def link_3_click(self, **event_args):
+    open_form('Form1')
     
