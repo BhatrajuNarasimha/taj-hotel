@@ -23,10 +23,213 @@ components:
       spacing_below: small, background: '', horizontal_align: center}
     name: image_1
     layout_properties: {grid_position: 'FPUITD,PWMWYP'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'The luxurious double rooms at the Taj Hotel in Delhi offer
+        a perfect blend of comfort and elegance. With their tasteful decor and modern
+        amenities, guests can enjoy a restful stay in the heart of India''s capital
+        city. Whether you''re traveling for business or leisure, the Taj''s double
+        rooms provide a welcoming sanctuary, ensuring a memorable experience during
+        your stay in Delhi.', font_size: 18, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_6
+    layout_properties: {grid_position: 'LDJCWP,TZBDIO'}
   - name: spacer_1
-    properties: {height: 97}
+    properties: {height: 38}
     type: Spacer
     layout_properties: {grid_position: 'XIAZLL,UXXUJS'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1
+    layout_properties: {grid_position: 'VBZPXF,XGIXQP'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Highlights, font_size: 18, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_8
+      layout_properties: {grid_position: 'KKTPUZ,LIWWLE'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Airport Transfer, font_size: 16, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:plane'}
+      name: label_2
+      layout_properties: {grid_position: 'TTOXQM,BFIDGG'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Free Wifi In All Rooms, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:wifi'}
+      name: label_3
+      layout_properties: {grid_position: 'TTOXQM,BZXITD'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Air Conditioning, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:umbrella'}
+      name: label_4
+      layout_properties: {grid_position: 'TTOXQM,QTKGPT'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Daily Housekeeping, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:paint-brush'}
+      name: label_5
+      layout_properties: {grid_position: 'TTOXQM,XTOFRP'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Balcony Terrace, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:bell'}
+      name: label_7
+      layout_properties: {grid_position: 'TTOXQM,SZASKV'}
+  - type: Spacer
+    properties: {height: 36.20001220703125}
+    name: spacer_2
+    layout_properties: {grid_position: 'BPQPTC,AODQSX'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_2
+    layout_properties: {grid_position: 'YYAUVA,PZXQCZ'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Facilities, font_size: 18, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_9
+      layout_properties: {grid_position: 'UMBROK,RFZHWI'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Airport Transfer, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_10
+      layout_properties: {grid_position: 'JNMSOP,QRUWSU'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Pets Allowed, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_11
+      layout_properties: {grid_position: 'JNMSOP,NKFPED'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Car Park, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_12
+      layout_properties: {grid_position: 'JNMSOP,VSFPCZ'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Free Wifi In All Rooms, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_13
+      layout_properties: {grid_position: 'JNMSOP,EKRVMO'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Luggage Storage, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_14
+      layout_properties: {grid_position: 'VXYERT,UXLBDX'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Contactless Check In/Out, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_15
+      layout_properties: {grid_position: 'VXYERT,IVMWHO'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Bar, font_size: 15, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: 'fa:check'}
+      name: label_16
+      layout_properties: {grid_position: 'VXYERT,JTZVME'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Laundry Service, font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:check'}
+      name: label_17
+      layout_properties: {grid_position: 'VXYERT,ULWKSX'}
+  - type: Spacer
+    properties: {height: 27}
+    name: spacer_3
+    layout_properties: {grid_position: 'EJMTXT,DGPWRZ'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_3
+    layout_properties: {grid_position: 'RXFRGW,MXQKZK'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Our Ratings ( Good to Know), font_size: 18, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_18
+      layout_properties: {grid_position: 'HNHMTM,VBNGBD'}
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Value for Money:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_19
+      layout_properties: {grid_position: 'AONLIN,OZXTOF'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: '9.0', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_20
+      layout_properties: {grid_position: 'AONLIN,AZVPBR'}
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Distance to City Center:', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_21
+      layout_properties: {grid_position: 'EAEXMR,ORIULN'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 8 km, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_22
+      layout_properties: {grid_position: 'EAEXMR,PGTRTH'}
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Nearest Airport:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_23
+      layout_properties: {grid_position: 'LINOZV,PLOMEV'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Indira Gandhi International Airport, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_24
+      layout_properties: {grid_position: 'LINOZV,QJGRJG'}
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Distance to Airport:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_25
+      layout_properties: {grid_position: 'VFFKFB,POYGEC'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 18 km, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_26
+      layout_properties: {grid_position: 'VFFKFB,VDKFOZ'}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Book, font_size: 20, font: '', spacing_above: small,
