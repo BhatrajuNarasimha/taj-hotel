@@ -12,9 +12,6 @@ class suite(suiteTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.drop_down_1.items = {
-    rooms['suite'] for rooms in app_tables.rooms.search()
-    }
 
     # Any code you write here will run before the form opens.
 

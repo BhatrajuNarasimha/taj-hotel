@@ -34,20 +34,11 @@ db_schema:
     - name: sroom
       admin_ui: {width: 200, order: 0}
       type: string
-    - name: sg
-      admin_ui: {width: 200, order: 1}
-      type: string
     - name: droom
       admin_ui: {width: 200, order: 2}
       type: string
-    - name: dg
-      admin_ui: {width: 200, order: 3}
-      type: string
     - name: suite
       admin_ui: {width: 200, order: 4}
-      type: string
-    - name: sug
-      admin_ui: {width: 200, order: 5}
       type: string
     title: rooms
   users:

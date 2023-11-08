@@ -11,12 +11,7 @@ from anvil.tables import app_tables
 class secon(seconTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.init_components(**properties)
-    self.drop_down_1.items = {
-      rooms['droom'] for rooms in app_tables.rooms.search()
-    }
-    
-
+    self.init_components(**properties
 
   def link_1_click(self, **event_args):
     open_form('menu')

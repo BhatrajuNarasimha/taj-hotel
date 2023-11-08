@@ -14,10 +14,3 @@ def add_info(name,type,no,email,days):
       email=email,
       days=days,
     )
-def add_info2():
-    app_tables.customer.add_row(
-      name=name, 
-      no=no,
-      email=email,
-      days=days,
-    )
