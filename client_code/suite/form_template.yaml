@@ -12,7 +12,7 @@ components:
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_4
-    layout_properties: {grid_position: 'QJGWVV,MPQXNY'}
+    layout_properties: {grid_position: 'LUSCLM,JTDAQN'}
     components:
     - type: Link
       properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '#000000',
@@ -20,11 +20,11 @@ components:
         spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
         italic: false, background: '#fff9ba', bold: true, underline: false, icon: ''}
       name: link_1
-      layout_properties: {grid_position: 'KHEWRO,JPMNAJ'}
+      layout_properties: {grid_position: 'NHZSVV,IXXHIZ'}
       event_bindings: {click: link_1_click}
   - name: label_1
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Classic Double room, font_size: 25, font: '', spacing_above: small,
+      visible: true, text: Classic Suite, font_size: 25, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     type: Label
@@ -38,14 +38,16 @@ components:
     layout_properties: {grid_position: 'FPUITD,PWMWYP'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'The luxurious double rooms at the Taj Hotel in Delhi offer
-        a perfect blend of comfort and elegance. With their tasteful decor and modern
-        amenities, guests can enjoy a restful stay in the heart of India''s capital
-        city. Whether you''re traveling for business or leisure, the Taj''s double
-        rooms provide a welcoming sanctuary, ensuring a memorable experience during
-        your stay in Delhi.', font_size: 18, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: true, underline: false,
-      icon: ''}
+      visible: true, text: 'The suites at the Taj Hotel in Delhi epitomize opulence
+        and grandeur. Designed for those seeking the ultimate in luxury and comfort,
+        these spacious accommodations offer a lavish retreat in the heart of the vibrant
+        capital city. With exquisite decor, expansive living spaces, and a range of
+        premium amenities, a stay in one of our suites is a truly indulgent experience.
+        From the stunning views of Delhi''s iconic landmarks to personalized service,
+        the Taj Hotel ensures that your stay in a suite is nothing short of extraordinary,
+        creating unforgettable memories in the lap of luxury.', font_size: 18, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
     name: label_6
     layout_properties: {grid_position: 'LDJCWP,TZBDIO'}
   - name: spacer_1
@@ -196,7 +198,7 @@ components:
       layout_properties: {grid_position: 'AONLIN,OZXTOF'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '9.0', font_size: null, font: '', spacing_above: small,
+        visible: true, text: '8.9', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_20

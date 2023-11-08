@@ -1,35 +1,69 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: ''}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"IIIVVZ":30,"LQSCDB":30}',
+    spacing_below: small, background: '#fffed9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1
+    layout_properties: {grid_position: 'URLWDJ,KGVXLJ'}
+    components:
+    - name: label_1
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: " \ud835\udd4e\ud835\udd3c\ud835\udd43\u2102\ud835\udd46\
+          \ud835\udd44\ud835\udd3c \ud835\udd4b\ud835\udd46 \ud835\udd4b\ud835\udd38\
+          \ud835\udd41 \u210d\ud835\udd46\ud835\udd4b\ud835\udd3c\ud835\udd43", font_size: 35,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#F3E5AB', bold: true, underline: true, icon: ''}
+      type: Label
+      layout_properties: {slot: default, grid_position: 'JJYQRH,HHHRYV'}
   - name: image_1
-    properties: {source: _/theme/profile.jfif, height: 294}
+    properties: {source: _/theme/taj-brand-home-logo.png, height: 308}
     type: Image
-    layout_properties: {grid_position: 'ZVZCQL,HCNTJW'}
+    layout_properties: {grid_position: 'YPFJAT,SMWFOX'}
   - name: button_2
-    properties: {text: SIGNUP, icon: 'fa:address-book-o', bold: true, font_size: 20}
+    properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: SIGNUP, font_size: 15, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: 'fa:address-book-o'}
     type: Button
-    layout_properties: {grid_position: 'YAWESN,DGAQWO'}
+    layout_properties: {grid_position: 'YAWESN,IIIVVZ'}
     event_bindings: {click: button_2_click}
   - name: button_3
-    properties: {text: LOGIN, icon: 'fa:address-card-o', bold: true, font: '', font_size: 20}
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: LOGIN, font_size: 15, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: 'fa:address-card-o'}
     type: Button
-    layout_properties: {grid_position: 'IXRBIC,VQDRLZ'}
+    layout_properties: {grid_position: 'YAWESN,LQSCDB'}
     event_bindings: {click: button_3_click}
-- type: FlowPanel
-  properties: {}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
-- name: label_1
-  properties: {text: "                                                \ud835\udd4e\
-      \ud835\udd3c\ud835\udd43\u2102\ud835\udd46\ud835\udd44\ud835\udd3c \ud835\udd4b\
-      \ud835\udd46 \ud835\udd4b\ud835\udd38\ud835\udd41 \u210d\ud835\udd46\ud835\udd4b\
-      \ud835\udd3c\ud835\udd43", align: center, font_size: 35}
-  type: Label
-  layout_properties: {slot: title}
+- type: ColumnPanel
+  properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: '#fffed9'}
+  name: card_2
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Welcome to the Taj Hotel in the heart of enchanting Delhi!
+        We are delighted to have you as our honored guest. At Taj, we take pride in
+        offering not just a place to stay but a home away from home, where every moment
+        is designed to make your experience truly memorable. Whether you''re here
+        for business or leisure, our dedicated team is here to ensure your comfort
+        and well-being throughout your stay. Explore the captivating city of Delhi,
+        and when you return, know that you''re coming back to a haven of luxury, warm
+        hospitality, and a world of culinary delights. Your journey begins here, and
+        we look forward to creating wonderful memories with you at the Taj Hotel.',
+      font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: true, underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'CKWZTT,FPQGFI'}

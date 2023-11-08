@@ -8,24 +8,27 @@ db_schema:
     - name: name
       admin_ui: {width: 200, order: 0}
       type: string
-    - name: date
-      admin_ui: {order: 7, width: 200}
-      type: datetime
     - name: 'no'
       admin_ui: {order: 5.5, width: 200}
       type: string
     - name: email
-      admin_ui: {order: 5, width: 200}
+      admin_ui: {order: 5.75, width: 200}
       type: string
     - name: days
       admin_ui: {width: 200, order: 6}
       type: string
-    - name: r-no
-      admin_ui: {width: 200, order: 8}
+    - name: r_no
+      admin_ui: {order: 8, width: 200}
       type: string
     - name: guest
       admin_ui: {width: 200, order: 9}
       type: string
+    - name: type
+      admin_ui: {order: 5.875, width: 200}
+      type: string
+    - name: date
+      admin_ui: {order: 7, width: 200}
+      type: datetime
     title: customer
   rooms:
     client: full
@@ -39,6 +42,15 @@ db_schema:
       type: string
     - name: suite
       admin_ui: {width: 200, order: 4}
+      type: string
+    - name: srg
+      admin_ui: {order: 5, width: 200}
+      type: string
+    - name: drg
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: surg
+      admin_ui: {order: 7, width: 200}
       type: string
     title: rooms
   users:

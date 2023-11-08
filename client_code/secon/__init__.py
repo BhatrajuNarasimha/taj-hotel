@@ -1,4 +1,5 @@
 from ._anvil_designer import seconTemplate
+
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -11,7 +12,7 @@ from anvil.tables import app_tables
 class secon(seconTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.init_components(**properties
+    self.init_components(**properties)
 
   def link_1_click(self, **event_args):
     open_form('menu')

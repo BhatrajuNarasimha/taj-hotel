@@ -12,21 +12,31 @@ class booking(bookingTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     
+    
+    
 
   def link_1_click(self, **event_args):
     open_form('menu')
 
   def button_1_click(self, **event_args):
-    anvil.server.call(
-      'add_info', 
-      self.text_box_1.text, 
-      self.text_box_3.text,
-      self.text_box_4.text,
-      self.drop_down_1.selected_value,
-      self.drop_down_2.selected_value
-    )
-    alert ('please proceed to pay to confirm your booking '+ self.text_box_1.text)
-    self.text_box_1.text, self.text_box_3.text, self.text_box_4.text  = '', '', ''
+    if self.text_box_1.text != "":
+      app_tables.customer.add_row(
+        name=self.text_box_1.text, 
+        no=self.text_box_3.text,
+        email= self.text_box_4.text,
+        type=self.drop_down_1.selected_value,
+        days=self.drop_down_2.selected_value,
+        date=self.date_picker_1.date,
+        r_no =self.drop_down_rno.selected_value,
+        guest=self.drop_down_gus.selected_value
+      )
+    self.text_box_1.text = ""
+    self.text_box_1.focus()
+    self.text_box_3.text = ""
+    self.text_box_3.focus()
+    self.text_box_4.text = ""
+    self.text_box_4.focus()
+    alert("hey there booking placed, please procced to pay to confirm your booking with us")
     
     price= 0
     if self.drop_down_1.selected_value == 'single':
@@ -53,7 +63,25 @@ class booking(bookingTemplate):
     tax = final_price * .06
     self.text_box_tax.text = tax
     self.text_box_total.text = final_price + tax
+    
+    
+
+    
+      
 
   def button_2_click(self, **event_args):
     alert('Transaction completed recieved amount')
+    open_form('details')
+
+  def drop_down_1_change(self, **event_args):
+    if self.drop_down_1.selected_value == 'single':
+      self.drop_down_rno.items = [str(rooms['sroom']) for rooms in app_tables.rooms.search()]
+      self.drop_down_gus.items = [str(rooms['srg']) for rooms in app_tables.rooms.search()]
+    elif self.drop_down_1.selected_value == 'double':
+      self.drop_down_rno.items = [str(rooms['droom']) for rooms in app_tables.rooms.search()]
+      self.drop_down_gus.items = [str(rooms['drg']) for rooms in app_tables.rooms.search()]
+      
+    elif self.drop_down_1.selected_value == 'suite':
+      self.drop_down_rno.items = [str(rooms['suite']) for rooms in app_tables.rooms.search()]
+      self.drop_down_gus.items = [str(rooms['surg']) for rooms in app_tables.rooms.search()]
     

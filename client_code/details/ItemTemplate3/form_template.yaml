@@ -1,0 +1,29 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {grid_position: 'MFRDUU,GIRXQC'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {grid_position: 'MFRDUU,NBRWGF'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {grid_position: 'MFRDUU,NNQOKS'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {grid_position: 'MFRDUU,SHCABQ'}
+- type: Label
+  properties: {}
+  name: label_5
+  layout_properties: {grid_position: 'MFRDUU,SVPEDZ'}
+- type: Label
+  properties: {}
+  name: label_6
+  layout_properties: {grid_position: 'MFRDUU,NDGYFM'}
+is_package: true
