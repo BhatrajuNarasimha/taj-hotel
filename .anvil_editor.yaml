@@ -11,8 +11,7 @@ unique_ids:
     single: '1699429637127961799739459.7279'
     booking.ItemTemplate1: '1699357484073626074784493.0896'
   modules: {}
-  server_modules:
-    ServerModule1: '1699375189162667205503928.7225'
+  server_modules: {}
   assets:
     Lotus-Hero-Shot-1367x912.jpg: '1699429747309881735869656.7616'
     download.jpeg: '1699429765580708042743964.0824'

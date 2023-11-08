@@ -177,7 +177,7 @@ components:
     name: drop_down_rno
     layout_properties: {grid_position: 'EJDGKZ,IIWUPL'}
     data_bindings:
-    - {property: selected_value, code: 'self.item[''sroom'']', writeback: true}
+    - {property: selected_value, code: 'self.item[''sroom'']', writeback: false}
     - {property: selected_value, code: 'self.item[''droom'']', writeback: true}
     - {property: selected_value, code: 'self.item[''suite'']', writeback: true}
   - type: Label
